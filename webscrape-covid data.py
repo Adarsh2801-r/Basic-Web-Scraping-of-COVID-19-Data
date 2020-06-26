@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib import style
 import seaborn as sns
 
-'''r= requests.get('https://www.worldometers.info/coronavirus/countries-where-coronavirus-has-spread/')
+r= requests.get('https://www.worldometers.info/coronavirus/countries-where-coronavirus-has-spread/')
 sp = BeautifulSoup(r.text,'html.parser')
 it = iter(sp.find_all('td'))
 csv_file = open('Covid data.csv','w')
@@ -29,7 +29,7 @@ while True:
 
 
 
-csv_file.close()'''
+csv_file.close()
 covid = pd.read_csv('Covid data.csv',engine='python')
 print(covid.head())
 
